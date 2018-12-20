@@ -1,0 +1,115 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
+.all-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 16pt;
+}
+
+.all-nav {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color:white;
+    border-bottom: 3px solid brown;  
+}
+
+.body-nav {
+    display: flex;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center
+}
+
+.text-nav {
+    margin: 10px 30px;
+}
+
+.all-head {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 3px solid brown;
+}
+
+.body-head {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    max-width: 1080px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    border: 3px solid brown;
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+}
+
+.slide-head {
+
+}
+
+.img-head {
+    width: 100%;
+    max-width: 1080px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseller {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    max-width: 1080px;
+}
+
+.kerjasama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1080px;
+    height: 200px;
+
+}
+
+.pertanyaan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1080px;
+    width: 80%;
+}
+
+.all-content {
+    border-bottom: 3px solid brown;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
