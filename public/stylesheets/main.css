@@ -1,6 +1,16 @@
 html,body {
-    margin:0;
     padding:0;
+    margin:0;
+    /* background-color:lightgray; */
+}
+@import url(//db.onlinewebfonts.com/c/73e5041012754950182f04aa6a9827b8?family=KG+Primary+Penmanship);
+@font-face {font-family: "KG Primary Penmanship";
+    src: url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.eot");
+    src: url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.svg#KG Primary Penmanship") format("svg");
 }
 
 .all-body {
@@ -16,12 +26,11 @@ html,body {
     display: flex;
     justify-content: center; 
     width: 100%;
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     top: 0;
-    background-color:white;
-    border-bottom: 3px solid brown;  
+    border-bottom: 3px solid #231f20;  
 }
 
 .body-nav {
@@ -35,14 +44,25 @@ html,body {
 
 .text-nav {
     margin: 10px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.text-nav:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .all-head {
     display: flex;
-    margin-top: 40px;
+    margin-top: 56px;
     width: 100%;
     justify-content: center;
-    border-bottom: 3px solid brown;
+    border-bottom: 3px solid #231f20;
+}
+
+.carousel-inner > .item > img{
+    margin:auto!important;
 }
 
 .body-head {
@@ -56,9 +76,10 @@ html,body {
 .button {
     display: flex;
     justify-content: center;
-    border: 3px solid brown;
+    align-items: center;
+    border: 3px solid #231f20;
     width: 300px;
-    height: 30px;
+    height: 50px;
     margin: 20px;
 }
 
@@ -83,19 +104,22 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    justify-content: space-between;
+    height: 150px;
     width: 80%;
     max-width: 1080px;
+    margin: 20px 0;
 }
 
 .kerjasama {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 80%;
     max-width: 1080px;
-    height: 200px;
-
+    height: 150px;
+    margin: 20px 0;
 }
 
 .pertanyaan {
@@ -107,9 +131,68 @@ html,body {
 }
 
 .all-content {
-    border-bottom: 3px solid brown;
+    border-bottom: 3px solid #231f20;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.pertanyaan-body {
+    display: flex;
+}
+.field-body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.layout-button-email {
+    display: flex;
+    align-items: flex-end;
+}
+
+.text {
+    margin: 20px;
+}
+
+.input-email {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    border: 3px solid #231f20;
+    padding-left: 5px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #553833;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.body-footer {
+    margin: 50px 0 ;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconic {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-foot {
+    margin-bottom: 20px;
+}
+
+.contact > div {
+    margin: 20px 0 
+}
+
+.socmed > div {
+    margin: 20px 0 
 }
