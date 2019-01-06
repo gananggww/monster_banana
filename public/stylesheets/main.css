@@ -1,7 +1,7 @@
 html,body {
     padding:0;
     margin:0;
-    /* background-color:lightgray; */
+    font-family: 'KG Primary Penmanship', Courier, monospace;
 }
 @import url(//db.onlinewebfonts.com/c/73e5041012754950182f04aa6a9827b8?family=KG+Primary+Penmanship);
 @font-face {font-family: "KG Primary Penmanship";
@@ -12,6 +12,9 @@ html,body {
     url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/73e5041012754950182f04aa6a9827b8.svg#KG Primary Penmanship") format("svg");
 }
+
+
+
 
 .all-body {
     display: flex;

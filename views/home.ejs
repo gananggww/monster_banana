@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Monster Banana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//db.onlinewebfonts.com/c/73e5041012754950182f04aa6a9827b8?family=KG+Primary+Penmanship" rel="shortcut icon" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css" />
-    <script src="javascripts/main.js"></script>
 </head>
 <body>
     <div class="all-body">
@@ -78,11 +74,11 @@
                     <div class="pertanyaan-body">
                         <div class="text">Ada Pertanyaan?</div>
                         <div class="field-body">
-                            <input class="input-email" type="text" placeholder="Email">
-                            <textarea name="" id="" cols="30" placeholder="Pertanyaan" rows="5"></textarea>
+                            <input class="input-email" id="val-subject" type="text" placeholder="Email">
+                            <textarea name="" id="val-ask" cols="30" placeholder="Pertanyaan" rows="5"></textarea>
                         </div>
                         <div class="layout-button-email">
-                            <div class="button">Kirim</div>
+                            <a id="kirim" class="button">Kirim</a>
                         </div>
                     </div>
                 </div>
@@ -117,5 +113,19 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>        
+        var subject = $('#val-subject').val()
+        var text = $('#val-ask').val()]
+        $("#kirim").click(function() {
+            let payload = {subject, text}
+            console.log(payload);
+        })
+    </script>
+
+
 </body>
 </html>
