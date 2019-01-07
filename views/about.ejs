@@ -5,74 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Monster Banana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css" />
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="all-body">
-
-        <div class="all-nav">
-            <div class="body-nav">
-                <div class="logo-nav"></div>
-                <div class="menu-nav">
-                    <a href="/" class="text-nav">Beranda</a>
-                    <a href="/about" class="text-nav">Tentang Kami</a>
-                    <a href="/reseller" class="text-nav">Reseller</a>
-                    <a href="/sponsorship" class="text-nav">Sponsorship</a>
-                    <a href="/faq" class="text-nav">FAQ</a>
-                </div>
-            </div>
+  <% include navbar %>
+  <div class="border-btm">
+    <div class="container">
+      <div class="thumbnail">
+        <img src="/images/header/peta.png" alt="peta" class="back-map">
+        <div class="container text-map text-center">
+          <h4>Tentang Monster Banana Chips</h4>
+          <p>
+            Where does it come from?
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
         </div>
-    
-        <div class="all-head">
-            <div class="body-head">
-                <div class="slide-head">
-                    <img class="img-head" src="https://www.pawoon.com/wp-content/uploads/2018/01/img-header-solusibisnis-cafe.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="all-content">
-                <div class="reseller">
-                    <div class="text">Jadilah Resseller Monster Banana sekarang juga dan rasakan keuntungannya!</div>
-                    <div class="button">Daftar Sekarang</div>
-                </div>
-            </div>
-            <div class="all-content">
-                <div class="kerjasama">
-                    <div class="text">Eventmu sedang butuh sponsor? Silahkan ajukan kerjasama dengan kami!</div>
-                    <div class="button">Ajukan Sekarang</div>
-                </div>
-            </div>
-            <div class="all-content">
-                <div class="pertanyaan">
-                    <div class="pertanyaan-body">
-                        <div class="text">Ada Pertanyaan?</div>
-                        <div class="field-body">
-                            <input type="text" placeholder="Email">
-                            <textarea name="" id="" cols="30" placeholder="Pertanyaan" rows="10"></textarea>
-                        </div>
-                        <div class="button">Kirim</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="body-footer">
-                <div class="socmed">
-                    <div class="ig">
-                        <img src="" alt="">
-                        <div class="text-footer"></div>
-                    </div>
-                    <div class="fb">
-                        <img src="" alt="">
-                        <div class="text-footer"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
+  <div class="border-btm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 d-none d-sm-block">
+          <div class="logo-row text-right">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+          <div class="logo-row text-left">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+          <div class="logo-row text-center">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="/images/header/logo1.jpg" alt="logo1" class="main-image mt-5">
+        </div>
+        <div class="col-md-4 d-none d-sm-block">
+          <div class="logo-row text-right">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+          <div class="logo-row text-left">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+          <div class="logo-row text-center">
+            <img src="/images/header/pisang.png" alt="" class="back-logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include footer %>
 </body>
 </html>

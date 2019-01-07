@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="all-nav">
+      <div class="container">
+        <div class="row text-center nav-text">
+          <div class="col-md-2">
+            <img src="/images/header/logo-nav.png" class="logo-nav">
+          </div>
+          <div id="home" class="col-md-2">
+            <a href="/" class="text-nav">Beranda</a>
+          </div>
+          <div id="about" class="col-md-2">
+            <a href="/about" class="text-nav">Tentang Kami</a>
+          </div>
+          <div id="reseller" class="col-md-2">
+            <a href="/reseller" class="text-nav">Reseller</a>
+          </div>
+          <div id="sponsor" class="col-md-2">
+            <a href="/sponsorship" class="text-nav">Sponsorship</a>
+          </div>
+          <div id="faq" class="col-md-2">
+            <a href="/faq" class="text-nav">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        var last_url = window.location.href.split("/").pop();
+        if (last_url === "") {
+          $("#home").addClass("nav-border");
+        } else if (last_url === "about") {
+          $("#about").addClass("nav-border");
+        } else if (last_url === "reseller") {
+          $("#reseller").addClass("nav-border");
+        } else if (last_url === "sponsorship") {
+          $("#sponsor").addClass("nav-border");
+        } else if (last_url === "faq") {
+          $("#faq").addClass("nav-border");
+        };
+      });
+    </script>
+  </body>
+</html>

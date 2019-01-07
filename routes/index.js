@@ -38,7 +38,7 @@ router.post('/email', function(req, res) {
       });
 
       // console.log(transporter);
-      
+
       // setup email data with unicode symbols
       let mailOptions = {
           from: '"Fred Foo 👻" <mochagsr@gmail.com>', // sender address
