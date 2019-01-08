@@ -261,6 +261,7 @@ html,body {
 input, textarea {
     border: 3px solid #231f20;
     padding-left: 5px;
+    width: 100%
 }
 
 .footer {
